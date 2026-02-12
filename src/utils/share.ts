@@ -32,11 +32,9 @@ export function getShareConfig(type: ShareType, data: any = {}): ShareConfig {
   // 默认分享图片
   // 微信小程序端使用分包下的 logo，避免触发主包 common/assets.js
   // 其他平台仍然使用原来的 /static 路径或自行替换为 CDN 地址
+  let baseUrl = '/static/logo.png'
   // #ifdef MP-WEIXIN
-  const baseUrl = '/pages/other/static/logo.png'
-  // #endif
-  // #ifndef MP-WEIXIN
-  const baseUrl = '/static/logo.png'
+  baseUrl = '/pages/other/static/logo.png'
   // #endif
 
   switch (type) {
