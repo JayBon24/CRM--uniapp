@@ -1,0 +1,11 @@
+/* uni.scss */
+@import '@/styles/theme.scss';
+
+/* 自定义uView主题色 */
+$u-primary: theme(primary);
+$u-warning: theme(warning);
+$u-success: theme(success);
+$u-error: theme(error);
+$u-info: theme(info);
+
+/* 注意：uView Plus 样式已在 main.ts 中引入，避免重复引入 */

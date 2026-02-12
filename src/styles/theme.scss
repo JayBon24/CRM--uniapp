@@ -1,0 +1,111 @@
+// 主题色配置
+$theme: (
+  // 背景色系
+  bg-base: #121212,        // 基础背景色
+  bg-card: #1E1E1E,       // 卡片背景
+  bg-active: #2D2D2D,     // 激活/悬浮状态
+  bg-mask: rgba(0, 0, 0, 0.4),  // 遮罩层
+
+  // 主色调
+  primary: #FF4B4B,       // 主要强调色（抖音红）
+  primary-light: #FF8F8F, // 主色调亮色
+  primary-dark: #CC3D3D,  // 主色调暗色
+  
+  // 辅助色
+  secondary: #FFE900,     // 次要强调色（明黄）
+  secondary-light: #FFF5B1,
+  secondary-dark: #FFC400,
+
+  // 文字颜色
+  text-primary: #FFFFFF,  // 主要文字
+  text-secondary: #AAAAAA,// 次要文字
+  text-disabled: #666666, // 禁用/提示文字
+  
+  // 边框和分割线
+  border: rgba(255, 255, 255, 0.2),
+  divider: rgba(255, 255, 255, 0.1),
+  
+  // 功能色
+  success: #52C41A,       // 成功
+  warning: #FAAD14,       // 警告
+  error: #FF4D4F,         // 错误
+  info: #1890FF,          // 信息
+);
+
+// 获取主题色的函数
+@function theme($key) {
+  @return map-get($theme, $key);
+}
+
+// 常用混入
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// 文字省略
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 多行文字省略
+@mixin text-ellipsis-multi($lines: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+}
+
+// 卡片样式
+@mixin card-style {
+  background-color: theme(bg-card);
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+// 点击反馈
+@mixin click-effect {
+  transition: all 0.3s;
+  &:active {
+    opacity: 0.8;
+    transform: scale(0.98);
+  }
+}
+
+// 渐变背景
+@mixin gradient-primary {
+  background: linear-gradient(to right, theme(primary), theme(primary-light));
+}
+
+@mixin gradient-secondary {
+  background: linear-gradient(to right, theme(secondary), theme(secondary-dark));
+}
+
+// 阴影效果
+@mixin shadow-sm {
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+@mixin shadow-md {
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.15);
+}
+
+// 动画过渡
+@mixin transition-base {
+  transition: all 0.3s ease;
+}
+
+// 安全区适配
+@mixin safe-area-bottom {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+} 

@@ -1,0 +1,385 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/tab/customers",
+      "style": {
+        "navigationBarTitleText": "客户"
+      }
+    },
+    {
+      "path": "pages/tab/schedule",
+      "style": {
+        "navigationBarTitleText": "日程",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/tab/ai",
+      "style": {
+        "navigationBarTitleText": "AI 助理"
+      }
+    },
+    {
+      "path": "pages/tab/reports",
+      "style": {
+        "navigationBarTitleText": "数据报表"
+      }
+    },
+    {
+      "path": "pages/tab/reports-wrapper",
+      "style": {
+        "navigationBarTitleText": "数据报表"
+      }
+    },
+    {
+      "path": "pages/tab/mine",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "subpackages/reports",
+      "name": "reports",
+      "pages": [
+        {
+          "path": "dashboard/index",
+          "style": {
+            "navigationBarTitleText": "数据报表"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/other",
+      "pages": [
+        {
+          "path": "auth/login",
+          "style": {
+            "navigationBarTitleText": "登录",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "auth/register",
+          "style": {
+            "navigationBarTitleText": "注册",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "chatkit/index",
+          "style": {
+            "navigationBarTitleText": "ChatKit",
+            "navigationBarTitleAlign": "left"
+          }
+        },
+        {
+          "path": "customer/list/index",
+          "style": {
+            "navigationBarTitleText": "客户列表"
+          }
+        },
+        {
+          "path": "customer/detail/index",
+          "style": {
+            "navigationBarTitleText": "客户详情"
+          }
+        },
+        {
+          "path": "customer/create/index",
+          "style": {
+            "navigationBarTitleText": "新增客户"
+          }
+        },
+        {
+          "path": "customer/create-with-case/index",
+          "style": {
+            "navigationBarTitleText": "案件新增"
+          }
+        },
+        {
+          "path": "customer/followup/create",
+          "style": {
+            "navigationBarTitleText": "跟进情况"
+          }
+        },
+        {
+          "path": "customer/followup/detail",
+          "style": {
+            "navigationBarTitleText": "跟进详情"
+          }
+        },
+        {
+          "path": "customer/visit/create",
+          "style": {
+            "navigationBarTitleText": "记录拜访"
+          }
+        },
+        {
+          "path": "customer/visit/detail",
+          "style": {
+            "navigationBarTitleText": "拜访详情"
+          }
+        },
+        {
+          "path": "customer/plan/edit",
+          "style": {
+            "navigationBarTitleText": "编辑计划"
+          }
+        },
+        {
+          "path": "customer/contract/confirm",
+          "style": {
+            "navigationBarTitleText": "合同确认"
+          }
+        },
+        {
+          "path": "customer/contract/detail",
+          "style": {
+            "navigationBarTitleText": "合同详情"
+          }
+        },
+        {
+          "path": "case/list/index",
+          "style": {
+            "navigationBarTitleText": "案件管理"
+          }
+        },
+        {
+          "path": "case/detail/index",
+          "style": {
+            "navigationBarTitleText": "案件详情"
+          }
+        },
+        {
+          "path": "customer/payment/create",
+          "style": {
+            "navigationBarTitleText": "回款录入"
+          }
+        },
+        {
+          "path": "customer/payment/detail",
+          "style": {
+            "navigationBarTitleText": "回款详情"
+          }
+        },
+        {
+          "path": "customer/legal-fee/create",
+          "style": {
+            "navigationBarTitleText": "律师费录入"
+          }
+        },
+        {
+          "path": "customer/legal-fee/detail",
+          "style": {
+            "navigationBarTitleText": "律师费详情"
+          }
+        },
+        {
+          "path": "customer/handover/apply",
+          "style": {
+            "navigationBarTitleText": "客户转交"
+          }
+        },
+        {
+          "path": "customer/schedule/day-detail",
+          "style": {
+            "navigationBarTitleText": "日程详情"
+          }
+        },
+        {
+          "path": "customer/schedule/detail",
+          "style": {
+            "navigationBarTitleText": "日程详情"
+          }
+        },
+        {
+          "path": "customer/schedule/edit",
+          "style": {
+            "navigationBarTitleText": "编辑日程"
+          }
+        },
+        {
+          "path": "selector/customer",
+          "style": {
+            "navigationBarTitleText": "选择客户"
+          }
+        },
+        {
+          "path": "selector/case",
+          "style": {
+            "navigationBarTitleText": "选择案件"
+          }
+        },
+        {
+          "path": "settings/index",
+          "style": {
+            "navigationBarTitleText": "系统设置"
+          }
+        },
+        {
+          "path": "about/index",
+          "style": {
+            "navigationBarTitleText": "关于"
+          }
+        },
+        {
+          "path": "mine/profile/index",
+          "style": {
+            "navigationBarTitleText": "个人资料"
+          }
+        },
+        {
+          "path": "profile/edit",
+          "style": {
+            "navigationBarTitleText": "编辑资料"
+          }
+        },
+        {
+          "path": "mine/data/index",
+          "style": {
+            "navigationBarTitleText": "我的数据"
+          }
+        },
+        {
+          "path": "mine/feedback/index",
+          "style": {
+            "navigationBarTitleText": "反馈与支持"
+          }
+        },
+        {
+          "path": "mine/feedback/list",
+          "style": {
+            "navigationBarTitleText": "反馈记录"
+          }
+        },
+        {
+          "path": "mine/messages/index",
+          "style": {
+            "navigationBarTitleText": "消息提醒"
+          }
+        },
+        {
+          "path": "mine/approval/index",
+          "style": {
+            "navigationBarTitleText": "审批中心"
+          }
+        },
+        {
+          "path": "mine/approval/detail",
+          "style": {
+            "navigationBarTitleText": "审批详情"
+          }
+        },
+        {
+          "path": "mine/management/leads",
+          "style": {
+            "navigationBarTitleText": "公海分配"
+          }
+        },
+        {
+          "path": "mine/management/team-schedule",
+          "style": {
+            "navigationBarTitleText": "团队日程"
+          }
+        },
+        {
+          "path": "mine/management/rules",
+          "style": {
+            "navigationBarTitleText": "规则配置"
+          }
+        },
+        {
+          "path": "mine/legal/user-agreement",
+          "style": {
+            "navigationBarTitleText": "用户协议"
+          }
+        },
+        {
+          "path": "mine/legal/privacy-policy",
+          "style": {
+            "navigationBarTitleText": "隐私政策"
+          }
+        },
+        {
+          "path": "reports/indicator-detail",
+          "style": {
+            "navigationBarTitleText": "指标详情",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "reports/report-center",
+          "style": {
+            "navigationBarTitleText": "报告中心",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "reports/report-detail",
+          "style": {
+            "navigationBarTitleText": "报告详情",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    }
+  ],
+  "preloadRule": {},
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "皇家马德里 CRM",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#ffffff",
+    "navigationBarTitleAlign": "left"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#667eea",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tab/customers",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png",
+        "text": "客户"
+      },
+      {
+        "pagePath": "pages/tab/schedule",
+        "iconPath": "static/tabbar/category.png",
+        "selectedIconPath": "static/tabbar/category-active.png",
+        "text": "日程"
+      },
+      {
+        "pagePath": "pages/tab/ai",
+        "iconPath": "static/tabbar/order.png",
+        "selectedIconPath": "static/tabbar/order-active.png",
+        "text": "AI"
+      },
+      {
+        "pagePath": "pages/tab/reports-wrapper",
+        "iconPath": "static/tabbar/cart.png",
+        "selectedIconPath": "static/tabbar/cart-active.png",
+        "text": "报表"
+      },
+      {
+        "pagePath": "pages/tab/mine",
+        "iconPath": "static/tabbar/mine.png",
+        "selectedIconPath": "static/tabbar/mine-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

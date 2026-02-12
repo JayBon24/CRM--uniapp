@@ -1,0 +1,62 @@
+# Cursor Project Rules for 抖音商城小程序
+
+# 忽略构建输出目录
+dist/
+.output/
+.nuxt/
+.temp/
+.cache/
+unpackage/
+
+# 忽略依赖目录
+node_modules/
+.pnpm-store/
+
+# 忽略编辑器和IDE文件
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 忽略日志文件
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 忽略环境配置文件
+# .env
+# .env.*
+# !.env.example
+
+# 忽略小程序特定文件
+project.config.json
+project.private.config.json
+
+# 忽略测试覆盖率报告
+coverage/
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
+
+# 忽略临时文件
+*.tmp
+*.temp
+.history/
+
+# 忽略静态资源源文件
+src/assets/raw/
+design/
+
+# 忽略文档文件（可选，建议不忽略）
+# docs/
+
+# 忽略备份文件
+*.bak
+*.backup 

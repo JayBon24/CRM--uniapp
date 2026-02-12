@@ -1,0 +1,326 @@
+/* =========================
+   Flex 布局相关
+   ========================= */
+.flex-row { display: flex; flex-direction: row; }
+.flex-row-r { display: flex; flex-direction: row-reverse; }
+.flex-col { display: flex; flex-direction: column; }
+.flex-col-r { display: flex; flex-direction: column-reverse; }
+.flex-center { display: flex; justify-content: center; align-items: center; }
+
+/* 换行控制 */
+.nowrap { flex-wrap: nowrap; }
+.wrap { flex-wrap: wrap; }
+.wrap-r { flex-wrap: wrap-reverse; }
+
+/* 主轴对齐 */
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+
+/* 交叉轴对齐 */
+.align-items-start { align-items: flex-start; }
+.align-items-end { align-items: flex-end; }
+.align-items-center { align-items: center; }
+.align-items-between { align-items: space-between; }
+.align-items-around { align-items: space-around; }
+
+/* 多轴线对齐 */
+.align-start { align-content: flex-start; }
+.align-end { align-content: flex-end; }
+.align-center { align-content: center; }
+.align-between { align-content: space-between; }
+.align-around { align-content: space-around; }
+.align-stretch { align-content: stretch; }
+
+/* 单个项目对齐 */
+.align-self-start { align-self: flex-start; }
+.align-self-end { align-self: flex-end; }
+.align-self-center { align-self: center; }
+.align-self-baseline { align-self: baseline; }
+.align-self-stretch { align-self: stretch; }
+
+/* Flex 占比 */
+.flex0 { flex: 0; }
+.flex1 { flex: 1; }
+.flex2 { flex: 2; }
+.flex3 { flex: 3; }
+.flex4 { flex: 4; }
+.flex5 { flex: 5; }
+.flexauto { flex: 0 0 auto; }
+.flexfull { flex: 1 1 auto; }
+.flex1-4 { flex: 0 0 25%; }
+.flex2-4 { flex: 0 0 50%; }
+.flex1-3 { flex: 1 1 33.3%; }
+
+/* =========================
+   间距相关
+   ========================= */
+/* 外边距 */
+.m-1 { margin: 1px; }
+.m-3 { margin: 3px; }
+.m-6 { margin: 6px; }
+.m-12 { margin: 12px; }
+.m-x-1 { margin-left: 1px; margin-right: 1px; }
+.m-x-3 { margin-left: 3px; margin-right: 3px; }
+.m-x-6 { margin-left: 6px; margin-right: 6px; }
+.m-x-12 { margin-left: 12px; margin-right: 12px; }
+.m-y-3 { margin-top: 3px; margin-bottom: 3px; }
+.m-y-6 { margin-top: 6px; margin-bottom: 6px; }
+.m-y-12 { margin-top: 12px; margin-bottom: 12px; }
+.m-t-3 { margin-top: 3px; }
+.m-t-6 { margin-top: 6px; }
+.m-t-12 { margin-top: 12px; }
+.m-b-3 { margin-bottom: 3px; }
+.m-b-6 { margin-bottom: 6px; }
+.m-b-12 { margin-bottom: 12px; }
+.m-l-3 { margin-left: 3px; }
+.m-l-6 { margin-left: 6px; }
+.m-l-12 { margin-left: 12px; }
+.m-r-3 { margin-right: 3px; }
+.m-r-6 { margin-right: 6px; }
+.m-r-12 { margin-right: 12px; }
+
+/* 内边距 */
+.p-1 { padding: 1px; }
+.p-3 { padding: 3px; }
+.p-6 { padding: 6px; }
+.p-12 { padding: 12px; }
+.p-x-3 { padding-left: 3px; padding-right: 3px; }
+.p-x-6 { padding-left: 6px; padding-right: 6px; }
+.p-x-12 { padding-left: 12px; padding-right: 12px; }
+.p-y-3 { padding-top: 3px; padding-bottom: 3px; }
+.p-y-6 { padding-top: 6px; padding-bottom: 6px; }
+.p-y-12 { padding-top: 12px; padding-bottom: 12px; }
+.p-t-3 { padding-top: 3px; }
+.p-t-6 { padding-top: 6px; }
+.p-t-12 { padding-top: 12px; }
+.p-b-3 { padding-bottom: 3px; }
+.p-b-6 { padding-bottom: 6px; }
+.p-b-12 { padding-bottom: 12px; }
+.p-l-3 { padding-left: 3px; }
+.p-l-6 { padding-left: 6px; }
+.p-l-12 { padding-left: 12px; }
+.p-r-3 { padding-right: 3px; }
+.p-r-6 { padding-right: 6px; }
+.p-r-12 { padding-right: 12px; }
+
+/* =========================
+   文本相关
+   ========================= */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+.text-inherit { text-align: inherit; }
+.text-gray { color: gray; }
+.text-gray-100 { color: #B2B5BC; }
+.text-bold { font-weight: bold; }
+.text-overflow { display: block; word-break: keep-all; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.text-overflow-break { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.text-overflow-break2 { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.text-overflow-break3 { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+
+/* =========================
+   颜色相关
+   ========================= */
+/* Backgrounds */
+.bg-navy { background-color: #001F3F; }
+.bg-blue { background-color: #0074D9; }
+.bg-aqua { background-color: #7FDBFF; }
+.bg-teal { background-color: #39CCCC; }
+.bg-olive { background-color: #3D9970; }
+.bg-green { background-color: #2ECC40; }
+.bg-lime { background-color: #01FF70; }
+.bg-yellow { background-color: #FFDC00; }
+.bg-orange { background-color: #FF851B; }
+.bg-red { background-color: #FF4136; }
+.bg-fuchsia { background-color: #F012BE; }
+.bg-purple { background-color: #B10DC9; }
+.bg-maroon { background-color: #85144B; }
+.bg-white { background-color: #FFFFFF; }
+.bg-gray { background-color: #AAAAAA; }
+.bg-silver { background-color: #DDDDDD; }
+.bg-black { background-color: #111111; }
+/* Colors */
+.text-navy { color: #001F3F; }
+.text-blue { color: #0074D9; }
+.text-aqua { color: #7FDBFF; }
+.text-teal { color: #39CCCC; }
+.text-olive { color: #3D9970; }
+.text-green { color: #2ECC40; }
+.text-lime { color: #01FF70; }
+.text-yellow { color: #FFDC00; }
+.text-orange { color: #FF851B; }
+.text-red { color: #FF4136; }
+.text-fuchsia { color: #F012BE; }
+.text-purple { color: #B10DC9; }
+.text-maroon { color: #85144B; }
+.text-white { color: #FFFFFF; }
+.text-silver { color: #DDDDDD; }
+.text-gray { color: #AAAAAA; }
+.text-black { color: #111111; }
+
+/* =========================
+   边框相关
+   ========================= */
+.border--navy { border-color: #001F3F; }
+.border--blue { border-color: #0074D9; }
+.border--aqua { border-color: #7FDBFF; }
+.border--teal { border-color: #39CCCC; }
+.border--olive { border-color: #3D9970; }
+.border--green { border-color: #2ECC40; }
+.border--lime { border-color: #01FF70; }
+.border--yellow { border-color: #FFDC00; }
+.border--orange { border-color: #FF851B; }
+.border--red { border-color: #FF4136; }
+.border--fuchsia { border-color: #F012BE; }
+.border--purple { border-color: #B10DC9; }
+.border--maroon { border-color: #85144B; }
+.border--white { border-color: #FFFFFF; }
+.border--gray { border-color: #AAAAAA; }
+.border--silver { border-color: #DDDDDD; }
+.border--black { border-color: #111111; }
+
+
+.border-gray-light { border: 1px solid #c8c8c8; }
+.border-gray { border: 1px solid #626262; }
+.border-gray-c { border: 1px solid #626262; border-radius: 10px; }
+.border-top { border-top: 1px solid #626262; }
+.border-top-gray { border-top: 1px solid #626262; }
+.border-bottom { border-bottom: 1px solid #626262; }
+.border-bottom-gray { border-bottom: 1px solid #ececec; }
+.border-bottom-gray-200 { border-bottom: 1px solid #a8a8a8; }
+
+/* =========================
+   字体相关（rem单位，1rem=16px）
+   ========================= */
+.fs36 { font-size: 2.25rem; }  /* 36px */
+.fs32 { font-size: 2rem; }     /* 32px */
+.fs28 { font-size: 1.75rem; }  /* 28px */
+.fs26 { font-size: 1.625rem; } /* 26px */
+.fs24 { font-size: 1.5rem; }   /* 24px */
+.fs22 { font-size: 1.375rem; } /* 22px */
+.fs20 { font-size: 1.25rem; }  /* 20px */
+.fs18 { font-size: 1.125rem; } /* 18px */
+.fs16 { font-size: 1rem; }     /* 16px */
+.fs15 { font-size: 0.9375rem; }/* 15px */
+.fs14 { font-size: 0.875rem; } /* 14px */
+.fs13 { font-size: 0.8125rem; }/* 13px */
+.fs12 { font-size: 0.75rem; }  /* 12px */
+.fs11 { font-size: 0.6875rem; }/* 11px */
+.fs10 { font-size: 0.625rem; } /* 10px */
+
+/* =========================
+   圆角相关
+   ========================= */
+.rd-3 { border-radius: 3px; }
+.rd-5 { border-radius: 5px; }
+.rd-8 { border-radius: 8px; }
+.rd-10 { border-radius: 8px; border: 1px solid #e0dddd; }
+.rd-50 { border-radius: 50px; }
+.top-rd-8 { border-top-left-radius: 8px; border-top-right-radius: 8px; }
+
+/* =========================
+   其它常用
+   ========================= */
+.pointer { cursor: pointer; }
+.disabled { color: #ccc; }
+.footer { width: 100%; height: 50px; position: fixed; left: 0; bottom: 0; background-color: #fff; z-index: 99; }
+.bottom { position: fixed; bottom: 0; }
+.top { position: fixed; top: 0px; }
+
+.img-thumb {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    line-height: 1.42857143;
+    padding: 2px;
+    border: 1px solid #595959;
+    border-radius: 8px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+/* 页面变灰度 */
+.grayscale {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+
+/* =========================
+   按钮宽度相关样式
+   ========================= */
+/* 小按钮 - 100rpx */
+.btn-width-100 {
+    width: 100rpx !important;
+    flex-shrink: 0;
+}
+
+/* 中等按钮 - 160rpx */
+.btn-width-160 {
+    width: 160rpx !important;
+    flex-shrink: 0;
+}
+
+/* 大按钮 - 180rpx */
+.btn-width-180 {
+    width: 180rpx !important;
+    flex-shrink: 0;
+}
+
+
+/* 强制按钮宽度 - 用于解决小程序中u-button宽度问题 */
+.u-button-fixed-width {
+    width: 180rpx !important;
+    min-width: 180rpx !important;
+    max-width: 180rpx !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+}
+
+/* 按钮包装器 - 用于控制按钮宽度 */
+.button-wrapper {
+    width: 180rpx;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.button-wrapper .u-button {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* 160rpx 按钮包装器 */
+.button-wrapper-160 {
+    width: 160rpx;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.button-wrapper-160 .u-button {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* 100rpx 按钮包装器 */
+.button-wrapper-100 {
+    width: 100rpx;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.button-wrapper-100 .u-button {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}

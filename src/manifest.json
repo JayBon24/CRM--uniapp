@@ -1,0 +1,80 @@
+{
+  "name": "",
+  "appid": "",
+  "description": "",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "app-plus": {
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    },
+    "modules": {},
+    "distribute": {
+      "android": {
+        "permissions": []
+      },
+      "ios": {},
+      "sdkConfigs": {}
+    }
+  },
+  "quickapp": {},
+  "mp-weixin": {
+    "appid": "wx1d0f9c2f6e1b17b2",
+    "setting": {
+      "urlCheck": false,
+      "minifyJS": true,
+      "minifyWXML": true,
+      "minifyWXSS": true
+    },
+    "usingComponents": true,
+    "optimization": {
+      "subPackages": true
+    },
+    "lazyCodeLoading": "requiredComponents",
+    "permission": {
+      "scope.userLocation": {
+        "desc": "用于客户跟进位置签到"
+      },
+      "scope.record": {
+        "desc": "用于语音输入功能"
+      }
+    },
+    "requiredPrivateInfos": [
+      "getLocation"
+    ],
+    "domain": {
+      "request": [
+        "https://api.wanfanglaw.cn"
+      ],
+      "socket": [
+        "wss://api.wanfanglaw.cn"
+      ],
+      "uploadFile": [
+        "https://api.wanfanglaw.cn"
+      ],
+      "downloadFile": [
+        "https://api.wanfanglaw.cn"
+      ]
+    }
+  },
+  "mp-alipay": {
+    "usingComponents": true
+  },
+  "mp-baidu": {
+    "usingComponents": true
+  },
+  "mp-toutiao": {
+    "usingComponents": true
+  },
+  "uniStatistics": {
+    "enable": false
+  },
+  "vueVersion": "3"
+}

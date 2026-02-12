@@ -1,0 +1,20 @@
+<view class="tabbar" style="padding-bottom: {{safeAreaInsetBottom}}px;">
+  <view class="tabbar__wrap">
+    <block wx:for="{{tabs}}" wx:for-item="item" wx:for-index="index" wx:key="pagePath">
+      <view class="tabbar__item" bindtap="onTap" data-index="{{index}}">
+        
+          <view class="tabbar__normal">
+            <image
+              class="tabbar__icon"
+              src="{{index === selected ? item.selectedIconPath : item.iconPath}}"
+              mode="aspectFit"
+            />
+            <text class="tabbar__text" style="color: {{index === selected ? selectedColor : color}};">
+              {{item.text}}
+            </text>
+          </view>
+        
+      </view>
+    </block>
+  </view>
+</view>
